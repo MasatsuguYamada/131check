@@ -1,0 +1,44 @@
+.tittle{
+  display: flex;
+  justify-content: center;
+  height:50px;
+}
+
+.startBtnContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.startBtn{
+  width:170px;
+  height:50px;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.innerContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  height: 50px;
+}
+
+.textValue{
+  width: 60px;
+}
+
+.spaceValue{
+  width: 15px;
+}
+
+.textBox{
+  width: 30px;
+}
+
+
