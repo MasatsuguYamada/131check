@@ -7,48 +7,52 @@
   <title>締め付け確認</title>
 </head>
 <body>
-  <div id="topDv">
-      <input /><br />
-      <input /><br />
-      <input /><br />
-      <input /><br />
-    </div>
-
-
-
   <div class="tittle">
     締め付け確認
   </div>
 
-  <div class="startBtnContainer">
-    <div><input class="startBtn" type="button" value="作業開始"></div>
-  </div>
+  <audio id="startBtn_audio" src="audio/start.mp3" type="audio/mp3"></audio>
+  <audio id="op1_audio" src="audio/op1.mp3" type="audio/mp3"></audio>
+  <audio id="op2_audio" src="audio/op2.mp3" type="audio/mp3"></audio>
+  <audio id="success_audio" src="audio/success.mp3" type="audio/mp3"></audio>
+  <audio id="error_audio" src="audio/error.mp3" type="audio/mp3"></audio>
 
-  <div class="container">
-    <div class="innerContainer">
-      <div class="textValue">確認①</div>
-      <div><input class="textBox" id="textBox1"type="text"></div>
-      <div class="spaceValue"></div>
-      <div><input class="textBox" id="textBox2"type="text"></div>
-    </div>
-    <div class="innerContainer">
-      <div class="textValue">確認②</div>
-      <div><input class="textBox" type="text"></div>
-      <div class="spaceValue"></div>
-      <div><input class="textBox" type="text"></div>
-    </div>
-    <div class="innerContainer">
-      <div class="textValue">確認③</div>
-      <div><input class="textBox" type="text"></div>
-      <div class="spaceValue"></div>
-      <div><input class="textBox" type="text"></div>
-    </div>
-    <div class="innerContainer">
-      <div class="textValue">確認④</div>
-      <div><input class="textBox" type="text"></div>
-      <div class="spaceValue"></div>
-      <div><input class="textBox" type="text"></div>
-    </div>
+  <div class="startBtnContainer">
+    <div><input class="startBtn" id="startBtn" type="button" value="作業開始"></div>
+  </div>
+  <form name="">
+    <div class="container">
+      <div class="innerContainer">
+        <div class="textValue">確認①</div>
+        <div><input class="textBox" id="textBox1" type="text" maxlength="4" onkeyup="nextfeild(this)"></div>
+        <div class="spaceValue"></div>
+        <div><input class="textBox" id="textBox2" type="text" maxlength="4" onkeyup="nextfeild(this)"></div>
+      </div>
+      <div class="innerContainer">
+        <div class="textValue">確認②</div>
+        <div><input class="textBox" id="textBox3" type="text" maxlength="4" onkeyup="nextfeild(this)"></div>
+        <div class="spaceValue"></div>
+        <div><input class="textBox" id="textBox4" type="text" maxlength="4" onkeyup="nextfeild(this)"></div>
+      </div>
+      <div class="startBtnContainer">
+        <div id="operation1">１工程</div>
+      </div>
+      <div class="innerContainer">
+        <div class="textValue">確認③</div>
+        <div><input class="textBox" id="textBox5" type="text" maxlength="4" onkeyup="nextfeild(this)"></div>
+        <div class="spaceValue"></div>
+        <div><input class="textBox" id="textBox6" type="text" maxlength="4" onkeyup="nextfeild(this)"></div>
+      </div>
+      <div class="innerContainer">
+        <div class="textValue">確認④</div>
+        <div><input class="textBox" id="textBox7" type="text" maxlength="4" onkeyup="nextfeild(this)"></div>
+        <div class="spaceValue"></div>
+        <div><input class="textBox" id="textBox8" type="text" maxlength="4" onkeyup="nextfeild(this)"></div>
+      </div>
+      <div class="startBtnContainer">
+        <div id="operation2">２工程</div>
+      </div>
+  </from>
   </div>
 
   <script type="text/javascript" src="index.js"></script>
