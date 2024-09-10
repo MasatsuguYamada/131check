@@ -22,7 +22,8 @@ const startBtnClick = () => {
   operation2.textContent = "２工程";
 
   audioStartBtn.currentTime = 0;
-  audioStartBtn.play();
+  //audioStartBtn.play();
+  audioSuccess.play();
 };
 
 const startBtn = document.getElementById("startBtn");
