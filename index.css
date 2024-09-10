@@ -41,4 +41,23 @@
   width: 30px;
 }
 
+#operation1{
+  display: grid;
+  place-items: center;
+  width: 170px;
+  height: 50px;
+  border-style: dashed;
+  border-color: black;
+  border-width: 1px;
+}
 
+#operation2{
+  display: grid;
+  place-items: center;
+  width: 170px;
+  height: 50px;
+  border-style: dashed;
+  border-color: black;
+  border-width: 1px;
+
+}
