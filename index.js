@@ -7,7 +7,9 @@ for(let i=1; i<9; i++){
 const startBtnClick = () => {
   check1 = false;
   check2 = false;
-  input[1].focus();
+
+  startBtn.focus();
+
   for(let i = 1; i < 9; i++){
     input[i].value = "";
     input[i].style.backgroundColor = "";
@@ -22,8 +24,11 @@ const startBtnClick = () => {
   operation2.textContent = "２工程";
 
   audioStartBtn.currentTime = 0;
-  //audioStartBtn.play();
-  audioSuccess.play();
+  audioStartBtn.play();
+  // audioSuccess.play();
+
+  input[1].focus();
+
 };
 
 const startBtn = document.getElementById("startBtn");
